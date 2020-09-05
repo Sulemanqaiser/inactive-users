@@ -19,7 +19,7 @@ const inactiveThirdStage = () => {
 
 var x = 1 
 // this is the main method that acts like a worker and runs every 1 minute
-setInterval(function(){
+setInterval((inactiveFirstStage,inactiveSecondStage,inactiveThirdStage)=>{
     // please write your code here
     if (x == 1 || x== 2 ){ 
     inactiveFirstStage()
